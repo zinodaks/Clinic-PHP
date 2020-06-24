@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: #8AC6D0;
+    width: 100%;
+    height: 4em;
+    overflow: hidden;
+}
+
+.cont {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+}
+.logo { 
+    display: inline-block;
+    background-color : red;
+    padding : 20px;
+}
+.logotext { 
+    font-size : 16pt;
+}
+
+.nav-item {
+    list-style-type: none;
+    display: inline;
+    padding: 17px 20px;
+    font-size: 15pt;
+    cursor : pointer;
+}
+a{
+    text-decoration: none ; 
+    color : black;
+}
+.nav-item:hover { 
+    border-bottom: 5px solid #06B2D1 ;
+}
+
+.navbar {
+    float: right;
+    align-content: center;
+}
