@@ -1,8 +1,8 @@
 <?php
 session_start();
-if(isset($_COOKIE['loggedin']) && isset($_COOKIE['username'])) {
+if (isset($_COOKIE['loggedin']) && isset($_COOKIE['username'])) {
     $_SESSION['loggedin'] = $_COOKIE['loggedin'];
-    $_SESSION['username'] =$_COOKIE['username'];
+    $_SESSION['username'] = $_COOKIE['username'];
 }
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     header("Location:index.php");
@@ -122,7 +122,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $ssn = testInput($_POST['ssn']);
     }
-    
+
     if (!preg_match("/^[1-9][0-9]{0,8}$/", $ssn) || strlen($ssn) < 9) {
         $ssnErr = "SSN not valid";
         $password = "";
@@ -172,9 +172,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($link->query($query)) {
             $defaultProfilePicture = "default/default.png";
             mkdir("uploads/$username");
-            copy($defaultProfilePicture , "uploads/$username/$username.png");
+            copy($defaultProfilePicture, "uploads/$username/$username.png");
             include "loginFunction.php";
-        } 
+        }
     }
 }
 
