@@ -20,4 +20,4 @@ A patient is able to register and login to the system in order to take an appoin
 
 A doctor can login to the system in order to view the appointments. An appointment can be cancelled by the doctor. A prescription/consultation can be also be made for a patient , the doctor can enter a medicine name (with AJAX live suggestions from the medicines table in the database) along with directions on how to take these medications that the patient can later view from their personal accounts.
 
-\*Design and Security were not a requirement of this project as the purpose was to learn how to build a website with a PHP backend that communicates with an SQL database. AJAX was also used when needed in order to refresh a certain part of a page without updating the whole page (mainly used in live search in this case).
+**_Design and Security were not a requirement of this project as the purpose was to learn how to build a website with a PHP backend that communicates with an SQL database. AJAX was also used when needed in order to refresh a certain part of a page without updating the whole page (mainly used in live search in this case)._**
